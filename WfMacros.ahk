@@ -8,7 +8,7 @@ toggle := 0
 F11::
     toggle := !toggle
     if (toggle){
-        SetTimer, Key4, 19000
+        SetTimer, Key4, 18000
         ; SetTimer, key2, 15000
         Gosub, Key4
         ; Gosub, key2
@@ -44,10 +44,11 @@ return
 
 ; firemode slots
 nataruk:
+    Send, {LButton Up}
     sleep, 200
     Send, {LButton Down}
-    Sleep, 1550
-    Send, {LButton Up}
+    Sleep, 700
+
 return
 
 fullAuto:
